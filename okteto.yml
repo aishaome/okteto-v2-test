@@ -1,4 +1,4 @@
-name: v2ws
+name: okteto
 services: 
 image: golang:alpine
 forward:
