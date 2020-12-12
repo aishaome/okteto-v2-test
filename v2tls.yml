@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: v2ws
+  name: okteto
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: v2ws
+      app: okteto
   template:
     metadata:
       labels:
-        app: v2ws
+        app: okteto
     spec:
       containers:
-      - image: byxiaopeng/v2tls-docker
-        name: v2ws
+      - image: aishaome/v2tls-docker
+        name: okteto
 
 ---
 
@@ -30,4 +30,4 @@ spec:
   - name: "http-port-tcp"
     port: 80
   selector:
-    app: v2ws
+    app: okteto
