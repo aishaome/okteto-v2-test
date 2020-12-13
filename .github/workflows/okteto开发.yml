@@ -24,7 +24,7 @@ jobs:
       run: |
         okteto login --token ${{ secrets.APITOKEN }}
         #okteto的api密钥
-        okteto namespace ${{ secrets.namespace }}
+        okteto namespace ${{ secrets.NAMESPACE }}
         #Namespace用户名
         cd /home/runner/work/okteto-reboot/okteto-reboot
         ls
