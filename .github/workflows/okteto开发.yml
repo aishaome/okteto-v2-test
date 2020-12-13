@@ -14,6 +14,7 @@ jobs:
         sudo apt-get -y update
         sudo apt-get -y install wget
         sudo apt-get -y install curl
+        sudo apt-get -y install tree
     - name: Clone source
       run: |
         cd /home/runner
@@ -26,8 +27,10 @@ jobs:
         #okteto的api密钥
         okteto namespace ${{ secrets.NAMESPACE }}
         #Namespace用户名
+        ls /home
+        cd /home/runner/work/okteto-reboot && ls
         cd /home/runner/work/okteto-reboot/okteto-reboot
-        ls
+        ls 
         # push y
         echo y | okteto push
         
