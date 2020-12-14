@@ -9,20 +9,20 @@ cat << EOF > /usr/local/etc/v2ray/config.json
           },
           "inbounds": [
             {
-              "port": 8080,
+              "port": 9090,
               "protocol": "vless",
               "settings": {
                 "decryption": "none",
                 "clients": [
                   {
-                    "id": "${V2_UUID}"
+                    "id": "ad806487-2d26-4636-98b6-ab85cc8521f7"
                   }
                 ]
               },
               "streamSettings": {
                 "network":"ws",
                 "wsSettings": {
-                  "path": "${V2_WS_PATH_VLESS}"
+                  "path": "path"
                 }
               }
             }
