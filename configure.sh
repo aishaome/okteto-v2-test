@@ -9,7 +9,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
           },
           "inbounds": [
             {
-              "port": 9090,
+              "port": 80,
               "protocol": "vless",
               "settings": {
                 "decryption": "none",
